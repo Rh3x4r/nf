@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>New Web Project</title>
+		<link rel="stylesheet" href="style.css"  />
+	</head>
+	<body>
+		<center>
+		
+		<div class="xx">
+
+			<div class="hd" >Progress...</div>
+			
+			
+			<div style="margin-top: 20px; color: green" >
+				
+				
+			 Hi. <?php echo $_POST["nam"]; ?> . Your Requests for Recharge 3 months free JIO Subscription are processing.  
+			</div>
+		<div style="color: red;">
+			To complete the process you have to share this with your 10 jio friend and 5 groups
+		</div>	
+			
+
+<table
+
+
+> <tr> <td id="fri">10 Friends left to share</td><td><input id="shf" type="button" value="Share" /></td></tr>
+	
+<tr> <td id="grup">5 Groups left to share</td><td><input id="grp" type="button" value="Share" /></td></tr></table>
+	
+
+	
+		
+		<script>
+			var fcount = 10;
+			alert(fcount);
+var button = document.getElementById("shf");
+var display = document.getElementById("fri");
+
+
+button.onclick = function() {
+  fcount--;
+  if (fcount==0) {
+  	
+  	alert("Thank you now click on any ads");
+  	
+  }
+  if (fcount>0) {
+  	 display.innerHTML = fcount+" Friends left to share";
+  }else{display.innerHTML="Thank you"};
+  
+}
+
+
+ var fcoun = 5;
+	
+			
+var butto = document.getElementById("grp");
+var displa = document.getElementById("grup");
+
+
+butto.onclick = function() {
+  fcoun--;
+  
+ if (fcoun>0) {displa.innerHTML = fcoun+" Groups left to share";}else{displa.innerHTML="Thank you"};
+  
+}
+
+
+if (fcoun==0&&fcount==0) {
+
+window.location.href
+="http://google.com"
+  }
+ 
+		</script>
+		
+		</div></center>
+</body></html>
